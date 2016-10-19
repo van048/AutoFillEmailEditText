@@ -109,10 +109,6 @@ public class AutoFillEmailEditText extends AutoCompleteTextView {
     }
 
     private class EmailAutoCompleteAdapter extends ArrayAdapter<String> {
-        @Override
-        public String getItem(int position) {
-            return emails[position];
-        }
 
         public EmailAutoCompleteAdapter(Context context, int textViewResourceId, String[] email_s) {
             super(context, textViewResourceId, email_s);
